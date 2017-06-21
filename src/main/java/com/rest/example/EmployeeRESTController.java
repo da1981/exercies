@@ -8,7 +8,6 @@ import java.util.Set;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validator;
-import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -54,7 +53,6 @@ public class EmployeeRESTController {
 	}
 
 	@POST
-	@Consumes("application/json")
 	public Response createEmployee(String content) throws URISyntaxException {
 		LOGGER.info("POST");
 		ObjectMapper mapper = new ObjectMapper();
@@ -91,7 +89,7 @@ public class EmployeeRESTController {
 
 	@PUT
 	@Path("/{id}")
-	@Consumes("application/json")
+	//@Consumes(MediaType.APPLICATION_JSON)
 	public Response updateEmployeeById(@PathParam("id") Integer id, Employee employee) {
 		LOGGER.info("PUT");
 		// validation

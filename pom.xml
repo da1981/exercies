@@ -18,7 +18,7 @@
 			<version>${dropwizard.version}</version>
 		</dependency>
 
-
+<!-- 
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
@@ -35,7 +35,7 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
 			<version>2.7.3</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 	<build>
 		<finalName>DropWizardExample-${project.version}</finalName>
